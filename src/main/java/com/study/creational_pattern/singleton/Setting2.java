@@ -1,4 +1,4 @@
-package com.study.pattern.singleton;
+package com.study.creational_pattern.singleton;
 
 /**
  * synchronized 사용해서 동기화 처리

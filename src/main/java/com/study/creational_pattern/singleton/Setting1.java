@@ -1,4 +1,4 @@
-package com.study.pattern.singleton;
+package com.study.creational_pattern.singleton;
 
 /**
  * private 생성자와 public static 메소드를 사용하는 방법

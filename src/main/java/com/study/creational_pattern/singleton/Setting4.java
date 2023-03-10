@@ -1,4 +1,4 @@
-package com.study.pattern.singleton;
+package com.study.creational_pattern.singleton;
 
 public enum Setting4 {
     INSTANCE;

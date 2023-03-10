@@ -1,4 +1,4 @@
-package com.study.pattern;
+package com.study.creational_pattern;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

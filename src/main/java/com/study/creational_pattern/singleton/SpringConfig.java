@@ -1,4 +1,4 @@
-package com.study.pattern.singleton;
+package com.study.creational_pattern.singleton;
 
 
 import org.springframework.context.ApplicationContext;
