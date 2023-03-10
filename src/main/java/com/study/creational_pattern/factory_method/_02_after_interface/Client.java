@@ -2,19 +2,15 @@ package com.study.creational_pattern.factory_method._02_after_interface;
 
 public class Client {
 
-    private ShipFactory shipFactory;
-
     public static void main(String[] args) {
-
-        Ship whiteship = new WhiteShipFactory().orderShip("Whiteship", "keesun@mail.com");
-        System.out.println(whiteship);
-
-        Ship blackship = new BlackShipFactory().orderShip("Blackship", "keesun@mail.com");
-        System.out.println(blackship);
+        Client client = new Client();
+        client.createFactory(new WhiteShipFactory(), "Whiteship", "wonpyol@gmail.com");
+        client.createFactory(new BlackShipFactory(), "Blackship", "wonpyol@gmail.com");
     }
 
-    private ShipFactory createFactory(ShipFactory shipFactory) {
-        return this.shipFactory = shipFactory;
+    public void createFactory(ShipFactory shipFactory, String name , String email) {
+        Ship ship = shipFactory.orderShip(name, email);
+        System.out.println("ship = " + ship);
     }
 
 }

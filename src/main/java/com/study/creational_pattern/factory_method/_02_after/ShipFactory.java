@@ -4,7 +4,7 @@ public interface ShipFactory {
 
     default Ship orderShip(String name, String email) {
         validate(name, email);
-        prepareFor(name);;
+        prepareFor(name);
         Ship ship = createShip(name);
         sendEmailTo(email, ship);
         return ship;

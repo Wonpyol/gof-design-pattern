@@ -4,10 +4,6 @@ public class WhiteShipFactory implements ShipFactory {
 
     @Override
     public Ship createShip(String name) {
-        Ship ship = new Ship();
-        ship.setName(name);
-        ship.setLogo("white logo");
-        ship.setColor("white");
-        return ship;
+        return new WhiteShip(name);
     }
 }
