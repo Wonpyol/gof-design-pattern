@@ -1,6 +1,6 @@
 package com.study.creational_pattern.singleton;
 
-public enum Setting4 {
+public enum SingletonEnum {
     INSTANCE;
 
     int value;
@@ -16,10 +16,10 @@ public enum Setting4 {
 
 class Test {
     public static void main(String[] args) {
-        Setting4 instance = Setting4.INSTANCE;
+        SingletonEnum instance = SingletonEnum.INSTANCE;
         System.out.println("instance.getValue() = " + instance.getValue());
         instance.setValue(2);
-        Setting4 instance1 = Setting4.INSTANCE;
+        SingletonEnum instance1 = SingletonEnum.INSTANCE;
         System.out.println("instance.getValue() = " + instance.getValue());
     }
 }

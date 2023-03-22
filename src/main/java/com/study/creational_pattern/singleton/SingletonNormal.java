@@ -3,15 +3,15 @@ package com.study.creational_pattern.singleton;
 /**
  * private 생성자와 public static 메소드를 사용하는 방법
  */
-public class Setting1 {
-    private static Setting1 instance;
+public class SingletonNormal {
+    private static SingletonNormal instance;
 
-    private Setting1() {
+    private SingletonNormal() {
     }
 
-    public static Setting1 getInstance() {
+    public static SingletonNormal getInstance() {
         if (instance == null) {
-            instance = new Setting1();
+            instance = new SingletonNormal();
         }
         return instance;
     }
@@ -29,7 +29,7 @@ public class Setting1 {
         @Override
         public void run() {
             while (true) {
-                Setting1 instance = new Setting1().getInstance();
+                SingletonNormal instance = new SingletonNormal().getInstance();
                 System.out.println("instance.getClass() = " + instance.getInstance());
             }
 
