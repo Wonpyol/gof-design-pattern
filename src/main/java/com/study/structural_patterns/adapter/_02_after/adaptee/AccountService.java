@@ -1,4 +1,4 @@
-package com.study.structural_patterns.adapter._02_after;
+package com.study.structural_patterns.adapter._02_after.adaptee;
 
 public class AccountService {
 

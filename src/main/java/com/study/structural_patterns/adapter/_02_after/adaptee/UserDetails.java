@@ -1,4 +1,4 @@
-package com.study.structural_patterns.adapter._02_after.security;
+package com.study.structural_patterns.adapter._02_after.adaptee;
 
 public interface UserDetails {
 
