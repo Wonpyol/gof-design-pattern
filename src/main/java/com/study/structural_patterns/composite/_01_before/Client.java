@@ -11,6 +11,10 @@ public class Client {
         bag.add(healPotion);
 
         Client client = new Client();
+        /**
+         * 고민 할 점 -> client 알아야만 값을 구할 수 있음
+         * client에서 할일을 컴포턴트에서 구현할 필요가 있음
+         */
         client.printPrice(doranBlade);
         client.printPrice(bag);
     }
