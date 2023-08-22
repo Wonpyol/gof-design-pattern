@@ -6,12 +6,14 @@ public class Client {
         Middleware middleware = Middleware.link(
                 new ThrottlingMiddleware(2),
                 new UserExitsMiddleware(server),
-                new RoleCheckMiddleware());
+                new RoleCheckMiddleware(),
+                new RoleCheck2Middleware());
 
+        //ThrottlingMiddleware, RoleCheck2Middleware
         server.setMiddleware(middleware);
 
 
-//        server.login("3123", "123123");
+//        /**/server.login("3123", "123123");
 //        server.login("wonpyol@gmail.com", "123123");
         server.login("wonpyol@gmail.com", "1234");
 

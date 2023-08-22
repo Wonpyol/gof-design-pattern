@@ -1,7 +1,4 @@
 package com.study.behavioral_patterns.chain_of_responsibillities._03_middleware;
-
-import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class Server {

@@ -7,6 +7,7 @@ public class Client {
         Request request = new Request("알로하");
         RequestHandler handler = new LoggingRequestHandler();
         handler.setNext(new AuthRequestHandler());
-
+        handler.setNext(new UserCheckRequestHandler());
+        handler.handler(request);
     }
 }
